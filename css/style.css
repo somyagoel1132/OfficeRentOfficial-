@@ -24,4 +24,185 @@ body {
 	margin:0;
 	padding: 0;
 }
+.details-carousel-image-1{
+    background-image: url("./../stuff/images/lounge.jpg");
+    background-repeat: no-repeat;
+	background-size: cover; 
+    margin-left: 10%;
+	border-radius: 0 0 0 20px;
+}
+ .details-carousel-image-2{
+    background-image: url("./../stuff/images/Office.jpg");
+    background-repeat: no-repeat;
+	background-size: cover; 
+    margin-left: 10%;
+	border-radius: 0 0 0 20px;
+}
+.details-carousel-details{
+    margin-right: 5%;
+    margin-top: 30%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background: rgba(0, 0, 0, 0.7); 
+	border-radius: 0 0 0 20px;
+	margin-bottom: 0;
+}
+.details-carousel-left{
+	color: white;
+	font-family: 'Roboto', sans-serif; 
+	padding: 5% 0 5% 5%;
+	border-radius: 0 0 0 20px;
+}
+.details-carousel-right{
+	color: white;
+	font-family: 'Roboto', sans-serif;
 
+	padding: 3% 0 3% 40%;
+}
+.stars-checked{
+	color: orange;
+
+}
+.details-availiable-now{
+	background-color: black;
+	color: #0EF935;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 5px;
+	border-radius: 5px 5px;
+	border-color: transparent;
+	font-size: 22px;
+	padding: 5px 15px 5px 15px;
+
+}
+
+.details-below-carousel{
+	color: #06176B;
+	font-family: 'Roboto', sans-serif; 
+	margin-top: 3%;
+	margin-left: 10%;
+	display: grid;
+	grid-template-columns: 30% 35% 35%;
+}
+.details-premium-features{
+	color: #06176B;
+	font-family: 'Roboto', sans-serif; 
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding-left: 20px;
+	align-items: center;
+	text-align: center;
+	padding-left: 10px;
+}
+.features-icons{
+	height: 50px;
+	width: 50px;
+}
+.details-reserve-button{
+	font-family: 'Roboto', sans-serif;
+            border-radius: 25px 25px;
+	        border-color: transparent;
+	        font-size: 22px;
+            padding: 5px 35px 5px 35px;
+            background-color:  #06176B;
+            color: white;
+            margin-left:10%;
+}
+.details-booknow-button{
+	font-family: 'Roboto', sans-serif;
+            border-radius: 25px 25px;
+	        border-color: transparent;
+	        font-size: 22px;
+            padding: 5px 25px 5px 25px;
+            background-color: #CF0872;
+            color: white;
+            margin-left: 10px;
+}
+.details-office-description{
+	background-color:#06176B ;
+	font-family: 'PT Sans Narrow', sans-serif !important;
+	color: white;
+	padding-left: 10%;
+	padding-top: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	border-radius: 0 20px 20px 0;
+	padding-right: 20px;
+}
+.office-description-para{
+	margin-top: 3%;
+	font-size: 23px;
+	font-family: 'Roboto', sans-serif;
+	margin-right: 5%;
+}
+.office-description-button{
+	font-family: 'Roboto', sans-serif;
+	border-radius: 15px 15px;
+	border-color: #959499;
+	font-size:25px;
+	padding: 5px 35px 5px 35px;
+	background-color:  #06176B;
+	color: white;
+	margin-bottom: 3%;
+}
+.details-card{
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 1px solid transparent;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.details-card-icons{
+	margin-top: 5%;
+	height: 120px;
+	width: 120px;
+	border: 1px transparent;
+	box-shadow: 1px 2px 2px 2px;
+	border-radius: 10px;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	color:#06176B;
+}
+.details-availability{
+	margin-top: 5%;
+	background-color:#06176B;
+	margin-left: 10%;
+	color: white;
+	padding-right: 10%;
+	padding-top: 3%;
+	border-radius: 5px 0 0 5px;
+	font-size: 20px;
+	padding-left: 5%;
+}
+.office-availability-button{
+	margin-top: 3%;;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 15px 15px;
+	border-color: white;
+	font-size:17px;
+	padding: 5px 35px 5px 35px;
+	background-color:  #06176B;
+	color: white;
+	margin-bottom: 3%;
+	
+}
+.details-map-reserve-button{
+	font-family: 'Roboto', sans-serif;
+            border-radius: 25px 25px;
+	        border-color: transparent;
+	        font-size: 20px;
+            padding: 5px 35px 5px 35px;
+            background-color:  #06176B;
+            color: white;
+            margin-left:10%;
+}
+.details-map-booknow-button{
+	font-family: 'Roboto', sans-serif;
+            border-radius: 25px 25px;
+	        border-color: transparent;
+	        font-size: 20px;
+            padding: 5px 25px 5px 25px;
+            background-color: #CF0872;
+            color: white;
+            margin-left: 10px;
+}
