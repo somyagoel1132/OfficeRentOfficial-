@@ -1,29 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap');
 
-/* Font family */
-/* 
-Primary Bold 700 -> 
-font-family: 'PT Sans Narrow', sans-serif;
-
-Secondary Regular 400 
-font-family: 'Roboto', sans-serif;
-
-*/
-
-/* 
-
-Color
-Primary Color : #000 ;
-
-Secondary (Dark Blue) : #07176a , White and Pink ; 
-accent color same as Secondary   
-
-*/
-
-body {
-	margin:0;
-	padding: 0;
-}
 
 /*search*/
 
