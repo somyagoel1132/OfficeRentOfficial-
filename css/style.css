@@ -231,3 +231,10 @@
 	font-weight: bold;
 }
 
+@media screen and (max-width:480px){
+	.co_img{
+		width: 400px;
+	}
+}
+
+
