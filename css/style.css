@@ -285,9 +285,11 @@
 	color: #06176B;
 	font-family: 'Roboto', sans-serif; 
 	margin-top: 3%;
-	margin-left: 10%;
-	display: grid;
-	grid-template-columns: 30% 35% 35%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/* display: grid;
+	grid-template-columns: 30% 35% 35%; */
 }
 .details-premium-features{
 	color: #06176B;
@@ -354,8 +356,8 @@
 	margin-left: 10%;
 	margin-right: 10%;
 	border: 1px solid transparent;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	display: flex; justify-content: center;
+flex-direction: row;
 }
 .details-card-icons{
 	margin-top: 5%;
