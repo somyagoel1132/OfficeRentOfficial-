@@ -48,7 +48,9 @@
     width:240px;
    
   }
-
+.dash_text1:hover{
+  background-color: #07176a;
+}
 .dash_nav_head{
     font-weight: bold;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -118,4 +120,46 @@
     flex-direction: column;
   }
 
+}
+
+@media (max-width: 600px) {
+  .sidenav{
+    width:100%;
+  }
+  .dash_text1{
+    width:100% ;
+    text-align: center;
+  }
+
+  .dash_text1:hover{
+    background-color:#343a40;
+  }
+  .dash_text1:after{
+    content: " ";
+    border-bottom-style: solid;
+    border-bottom-width:1px;
+    display:table-cell;
+    border-bottom-color: rgb(165, 154, 154);
+    width:600px;
+   
+  }
+
+  .dash_profile{
+    width:100% ;
+    text-align: center;
+    
+}
+
+.dash_profile:after{
+    content: " ";
+    border-bottom-style: solid;
+    border-bottom-width:1px;
+    display:table-cell;
+    border-bottom-color: rgb(165, 154, 154);
+    width:600px;
+  }
+
+  .dash_b1{
+    margin-left: 90px;
+  }
 }
