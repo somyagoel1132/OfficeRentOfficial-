@@ -1,3 +1,51 @@
+
+.body-container{
+  margin-left:150px;
+}
+.main-container-1{
+    display:grid;
+    margin:10px 0 10px 140px;
+    width: 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.main-container-1-item{
+  background-color: #07176a;
+  color:white;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+  padding:50px 0px 50px 0px;
+  margin:50px 10px;
+  width: 22rem;
+  border-radius:5px;
+  font-family: 'PT Sans Narrow', sans-serif;
+
+}
+.b1-color{
+  background-color: gray;
+}
+
+.main-container-2{
+  font-size:2em;
+  font-weight: bold;
+  color: #07176a;
+  margin:0 0 0 150px;
+}
+#viewall{
+  text-align:center;
+  font-weight: bold;
+  font-size: large;
+  margin:30px 0 30px 150px;
+  cursor: pointer;
+}
+#viewall:hover{
+  text-decoration: underline;
+
+}
+
+
 /*search*/
 
 .s1_box{
@@ -19,8 +67,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-
 
 .s1_dropbtn{
 	font-family: 'Roboto', sans-serif;
@@ -45,13 +91,12 @@
   height: 40px;
   text-align: center;
 	border-color: rgb(131, 128, 128);
+
 	border-width: 1px;
 	border-radius: 10px;
 	background-color: white;
 	color: #fff;
-
-	
-
+	padding: 5px;
 }
 
 
@@ -73,11 +118,13 @@
 	font-weight: bold;
   }
  
-  .s2_dropbtn .dropdown{
 
-  
+.dropdown{
+
+  .s2_dropbtn .dropdown{
   flex: 0 1 10%;
   padding: 10px;
+
   
 }
 
@@ -94,11 +141,16 @@
 }
     
 .s2_dropbtn{
-  display: flex;
-  flex-wrap: wrap;
+
+  display: flex; 
+  flex-direction: row;  
+  justify-content: center;
+    flex-wrap: wrap;
  margin-left: 200px;
+  
 	
 }
+
 
   
 
@@ -197,6 +249,22 @@
       margin-left: 30%;
 
   
+
+
+.co_card{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:50px 0px 0 150px ;
+  width: 75%;
+  
+}
+
+.co_card1{
+  margin-left:10px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  box-shadow: 1px 1px 10px 1px black;
+
     
   }
   
@@ -333,6 +401,7 @@
   float: right;
  
 
+
 }
 
 .co_button3{
@@ -375,12 +444,10 @@
 	border-radius: 25px;
   text-align: center;
   margin-left: 2%;
-
-	
 }
-
 .co_b{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-top: 16%;
@@ -414,14 +481,13 @@
 .s3_box{
   background-image: url("../stuff/images/search/img8.jpg");
   background-position: center center;
-    background-repeat: no-repeat;
-    
-    background-size: cover;
+  background-repeat: no-repeat; 
+  background-size: cover;
+
 	border-radius: 15px;
 	height: 500px;
 	position: relative;
 	text-align: left;
-  
 	margin-right: 150px;
 }		
 
@@ -513,6 +579,7 @@
 	height: 50px;
 	width: 50px;
 }
+
 .details-reserve-button{
 	font-family: 'Roboto', sans-serif;
             border-radius: 25px 25px;
@@ -935,6 +1002,44 @@ flex-direction: row;
 
 /* Resposiveness 1*/
 @media (max-width: 900px) {
+  /* For Search page */
+
+#navAccordion{
+  margin-left: 33%;
+  margin-bottom: 100px;
+}
+.dash_b1{
+
+  transform: translate(50%,-80px);
+}
+.b1_color{
+  background-color: gray;
+}
+.form-btns{
+  transform: translateX(150px);
+}
+
+  .main-container-1{
+    margin: auto -100px;
+  }
+  .main-container-1-item{
+    width: 190px;
+  }
+  .main-container-2{
+  transform: translateX(-230px);
+
+  }
+.co_card{
+display: grid;
+grid-template-columns: 1fr 1fr;
+width: 50%;
+margin-left:-130px;
+
+}
+#viewall{
+  margin-right: 150px;
+}
+  /* For Search page until here */
   .viewall {
     width: 20%;
   }
@@ -992,6 +1097,48 @@ flex-direction: row;
 
   /* responsiveness 2 */
   @media (max-width: 600px) {
+      /* For Search page */
+      #navAccordion{
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+      .dash_b1{
+      
+        transform: translate(-50%,80px);
+      }
+      .form-btns{
+        transform: translate(90px,-80px);
+      }
+.main-container-1{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.main-container-1-item{
+  width: 250px;
+}
+.main-container-2{
+  transform: translateX(-230px);
+  width: 250px;
+}
+.co_card{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transform: translateX(-180px);
+  margin-left: 20px;
+
+
+}
+.b1-color{
+  background-color:gray;
+}
+#viewall{
+  width: 30%;
+ transform: translateX(-40px);
+}
+
+  /* For Search page until here */
     .viewall {
       width: 35%;
       margin-left: 120px;
@@ -1046,5 +1193,6 @@ flex-direction: row;
   .footer {
     grid-template-columns: 1fr;
   }
+
 }
 

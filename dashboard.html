@@ -1,98 +1,299 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>FOGO - Rent Office On the GO</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
-	<script type="text/javascript" src="js/jquery.js"></script>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top dash_nav">
         <a class="navbar-brand dash_nav_head" href="#">FOGO</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse " id="navbarCollapse">
-          <ul class="navbar-nav mr-auto sidenav dash_side  " id="navAccordion">
-            <li class="nav-item active ">
-                <div class="dash_profile">
-                    <img class="dash_img" src="stuff\icons\dashboard.jpg">
-                    <a class="nav-link " href="#" style="color: white;">Greta Thunberg</a>
-                    <br>
-                    
-                </div>
-              
-            </li>
-            <li class="nav-item active">
-                <div class="dash_text1">
-                    <a class="nav-link " href="#" style="color: white;">Dashboard</a>
-                    </div>
-                  
-            </li>
-            <li class="nav-item active">
-                <div class="dash_text1">
-                <a class="nav-link " href="#" style="color: white;">Edit Profile</a>
-                </div>
-              </li>
+            <ul class="navbar-nav mr-auto sidenav dash_side  " id="navAccordion">
+                <li class="nav-item active ">
+                    <div class="dash_profile">
+                        <img class="dash_img" src="stuff\icons\dashboard.jpg">
+                        <a class="nav-link " href="#" style="color: white;">Greta Thunberg</a>
+                        <br>
 
-            <li class="nav-item active ">
-                <div class="dash_text1">
-                    <a class="nav-link " href="#" style="color: white;">Your Offices</a>
                     </div>
-              </li>
-            
-            <li class="nav-item active">
-                <div class="dash_text1">
-                    <a class="nav-link " href="#" style="color: white;">Payment</a>
-                    </div>
-            </li>
 
-            <li class="nav-item active">
-                <div class="dash_text1">
-                    <a class="nav-link " href="#" style="color: white;">Your Rooms</a>
+                </li>
+                <li class="nav-item active">
+                    <div class="dash_text1">
+                        <a class="nav-link " href="#" style="color: white;">Dashboard</a>
                     </div>
-              </li>
-            
-            <li class="nav-item active">
-                <div class="dash_text1">
-                    <a class="nav-link " href="#" style="color: white;">Edit Profile</a>
+
+                </li>
+                <li class="nav-item active">
+                    <div class="dash_text1">
+                        <a class="nav-link " href="#" style="color: white;">Edit Profile</a>
                     </div>
-            </li>
-          </ul>
-          <form class="form-inline ml-auto mt-2 mt-md-0">
-            <button class="btn btn-outline-success my-2 my-sm-0 dash_b1" type="submit">ADD OFFICE</button>
-            <button class="btn btn-outline-success my-2 my-sm-0 dash_b2" type="submit">LOGOUT</button>
-          </form>
+                </li>
+
+                <li class="nav-item active ">
+                    <div class="dash_text1">
+                        <a class="nav-link " href="#" style="color: white;">Your Offices</a>
+                    </div>
+                </li>
+
+                <li class="nav-item active">
+                    <div class="dash_text1">
+                        <a class="nav-link " href="#" style="color: white;">Payment</a>
+                    </div>
+                </li>
+
+                <li class="nav-item active">
+                    <div class="dash_text1">
+                        <a class="nav-link " href="#" style="color: white;">Your Rooms</a>
+                    </div>
+                </li>
+
+                <li class="nav-item active">
+                    <div class="dash_text1">
+                        <a class="nav-link " href="#" style="color: white;">Edit Profile</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline ml-auto mt-2 mt-md-0">
+                <div class="form-btns">
+                    <button class="btn btn-outline-success my-2 my-sm-0 dash_b1" type="submit">ADD OFFICE</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0 dash_b1 b1-color" type="submit">LOGOUT</button>
+                </div>
+            </form>
         </div>
-      </nav>
-      <br>
-      <br>
-      <script>
-          $(document).ready(function() {
-    $('.nav-link-collapse').on('click', function() {
-      $('.nav-link-collapse').not(this).removeClass('nav-link-show');
-      $(this).toggleClass('nav-link-show');
-    });
-  });
-      </script>
+    </nav>
+    <br>
+    <br>
+    <!-- Main content starts -->
+    <div class="body-container">
+        <div class="main-container-1">
+            <div class="main-container-1-item">
+                <div>10</div>
+                <div> Offices</div>
+            </div>
+            <div class="main-container-1-item">
+                <div>2</div>
+                <div> Reserved</div>
+            </div>
+            <div class="main-container-1-item">
+                <div>8</div>
+                <div> Available</div>
+            </div>
+        </div>
+        <div class="main-container-2"> Recently Added</div>
+        <!-- Cards begin from here -->
+        <div class="co_card">
+            <div class="card co_card1" style="width: 22rem;">
+                <img class="card-img-top co_img" src="stuff\images\search\img2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title co_head">UB City</h5>
+                    <div class="card-text co_text1">Mandin Private Limited<br>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
-        
-    
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+
+                        <img class="co_logo " src="stuff\icons\verify.jpg">Verified
+
+                        <br>
+                        <div class="co_text3">Available Now</div><br>
+                        <img class="co_logo2" src="stuff\icons\rupee-indian.png">150/Hour
+                        <img class="co_logo3" src="stuff\icons\hair.png">8 Seats
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-info co_button1"><a href="#"
+                            class=" co_link ">Edit</a></button>
+                    <button type="button" class="btn btn-info co_button2"><a href="#"
+                            class=" co_link">Delete</a></button>
+                </div>
+            </div>
+
+
+            <div class="card co_card1 " style="width: 22rem;">
+                <img class="card-img-top co_img" src="stuff\images\search\img3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title co_head">CBD Bangalore</h5>
+                    <div class="card-text co_text1">Mandin Private Limited<br>
+
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+
+                        <img class="co_logo " src="stuff\icons\verify.jpg">Verified
+
+                        <br>
+                        <div class="co_text3">Available Now</div><br>
+                        <img class="co_logo2" src="stuff\icons\rupee-indian.png">150/Hour
+                        <img class="co_logo3" src="stuff\icons\hair.png">8 Seats
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-info co_button1"><a href="#"
+                            class=" co_link ">Edit</a></button>
+                    <button type="button" class="btn btn-info co_button2"><a href="#"
+                            class=" co_link">Delete</a></button>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card co_card1" style="width: 22rem;">
+                <img class="card-img-top co_img" src="stuff\images\search\img4.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title co_head">The Estate</h5>
+                    <div class="card-text co_text1">Mandin Private Limited<br>
+
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+
+                        <img class="co_logo " src="stuff\icons\verify.jpg">Verified
+
+                        <br>
+                        <div class="co_text3">Available Now</div><br>
+                        <img class="co_logo2" src="stuff\icons\rupee-indian.png">150/Hour
+                        <img class="co_logo3" src="stuff\icons\hair.png">8 Seats
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-info co_button1"><a href="#"
+                            class=" co_link ">Edit</a></button>
+                    <button type="button" class="btn btn-info co_button2"><a href="#"
+                            class=" co_link">Delete</a></button>
+                </div>
+            </div>
+            <!-- </div>
+
+        <div class="co_card "> -->
+            <div class="card co_card1" style="width: 22rem;">
+                <img class="card-img-top co_img" src="stuff\images\search\img6.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title co_head">Tejas Archade</h5>
+                    <div class="card-text co_text1">Mandin Private Limited<br>
+
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+
+                        <img class="co_logo " src="stuff\icons\verify.jpg">Verified
+
+                        <br>
+                        <div class="co_text3">Available Now</div><br>
+                        <img class="co_logo2" src="stuff\icons\rupee-indian.png">150/Hour
+                        <img class="co_logo3" src="stuff\icons\hair.png">8 Seats
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-info co_button1 "><a href="#"
+                            class=" co_link ">Edit</a></button>
+                    <button type="button" class="btn btn-info co_button2"><a href="#"
+                            class=" co_link">Delete</a></button>
+                </div>
+            </div>
+
+            <div class="card co_card1 card-shadow" style="width: 22rem;">
+                <img class="card-img-top co_img" src="stuff\images\search\img5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title co_head">Fairway</h5>
+                    <div class="card-text co_text1">Mandin Private Limited<br>
+
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+
+                        <img class="co_logo " src="stuff\icons\verify.jpg">Verified
+
+                        <br>
+                        <div class="co_text3">Available Now</div><br>
+                        <img class="co_logo2" src="stuff\icons\rupee-indian.png">150/Hour
+                        <img class="co_logo3" src="stuff\icons\hair.png">8 Seats
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-info co_button1"><a href="#"
+                            class=" co_link ">Edit</a></button>
+                    <button type="button" class="btn btn-info co_button2"><a href="#"
+                            class=" co_link">Delete</a></button>
+                </div>
+            </div>
+
+            <div class="card co_card1 " style="width: 22rem;">
+                <img class="card-img-top co_img" src="stuff\images\search\img7.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title co_head">World Trade Centre</h5>
+                    <div class="card-text co_text1">Mandin Private Limited<br>
+
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+
+                        <img class="co_logo " src="stuff\icons\verify.jpg">Verified
+
+                        <br>
+                        <div class="co_text3">Available Now</div><br>
+                        <img class="co_logo2" src="stuff\icons\rupee-indian.png">150/Hour
+                        <img class="co_logo3" src="stuff\icons\hair.png">8 Seats
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-info co_button1"><a href="#"
+                            class=" co_link ">Edit</a></button>
+                    <button type="button" class="btn btn-info co_button2"><a href="#"
+                            class=" co_link">Delete</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="viewall">VIEW ALL</div>
+
+    <!--  Main content ends -->
+    <script>
+        $(document).ready(function () {
+            $('.nav-link-collapse').on('click', function () {
+                $('.nav-link-collapse').not(this).removeClass('nav-link-show');
+                $(this).toggleClass('nav-link-show');
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
 
 </body>
-</html>
+  </html>
