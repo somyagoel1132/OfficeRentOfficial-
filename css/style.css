@@ -1,3 +1,4 @@
+
 .body-container{
   margin-left:150px;
 }
@@ -62,6 +63,10 @@
 	font-weight: bold;
 }
 
+.s1_flex{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .s1_dropbtn{
 	font-family: 'Roboto', sans-serif;
@@ -82,25 +87,25 @@
 	font-family: 'Roboto', sans-serif;
 	position: relative;
 	margin-left: 40%;
-	width: 26%;
-	height: 40px;
+	width:30%;
+  height: 40px;
+  text-align: center;
 	border-color: rgb(131, 128, 128);
-	text-indent: 30%;
+
 	border-width: 1px;
 	border-radius: 10px;
 	background-color: white;
 	color: #fff;
 	padding: 5px;
-	
-
 }
 
 
 
 .s1_button{
 	width: 6%;
-	height: 40px;
-    text-indent: 3px;
+  height: 40px;
+  margin-left: 2%;
+ text-align: center;
 	border-radius: 25px;
 	border: 3px solid gray;
 	background-color: #07176a;
@@ -113,9 +118,13 @@
 	font-weight: bold;
   }
  
+
 .dropdown{
 
-  padding: 5px 5px;
+  .s2_dropbtn .dropdown{
+  flex: 0 1 10%;
+  padding: 10px;
+
   
 }
 
@@ -132,12 +141,20 @@
 }
     
 .s2_dropbtn{
+
   display: flex; 
   flex-direction: row;  
   justify-content: center;
+    flex-wrap: wrap;
+ margin-left: 200px;
   
 	
 }
+
+
+  
+
+
 
   
 .co_img{
@@ -191,7 +208,48 @@
 	font-size: 2em;
 	font-weight: bold;
   }
+  .co_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    
+ }
+
+ .card {
+  flex: 0 1 30%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   
+}
+
+@media screen and (max-width:600px ) {
+  .co_card {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-right: 0%;;
+      margin-left:0%; 
+      width: 100%;     
+
+  }
+
+  .co_card .card {
+      flex: 0 1 calc(30% - 1em);
+  }
+
+  .s2_dropbtn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 30%;
+      margin-left: 30%;
+
+  
+
 
 .co_card{
   display:grid;
@@ -206,8 +264,153 @@
   margin-right: 10px;
   margin-bottom: 8px;
   box-shadow: 1px 1px 10px 1px black;
+
+    
+  }
+  
+  .s2_dropbtn .dropdown{
+
+    
+    flex: 0 1 calc(10% - 1em);
+    padding: 10px;
+    
+  }
+  .s1_box{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .s1_flex{
+    display: flex;
+    flex-wrap: wrap;
+   } 
+   .s1_dropbtn{
+    width: 25%;
+    margin-left: 5%;
+   }   
+
+   .s1_search{
+    margin-left: 28%;
+    width: 50%;
+   }   
+
+   .s1_button{
+     width:15%;
+   }
+  .s3_box{
+    width: 100%;
+   
+ 
+  }
+  .s3_top-left{
+    font-size: 10px;
+    top: 2px;
+    
+
+  }
+.co_b{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  float: right;
+ 
+
 }
 
+.co_button3{
+  margin-left: 90%;
+  margin-top: 40%;
+  
+}
+  
+}
+
+@media screen and (max-width:900px ) {
+  .co_card {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+
+  }
+
+  .co_card .card {
+      flex: 0 1 calc(30% - 1em);
+  }
+
+  .s2_dropbtn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  
+    
+  }
+  .s2_dropbtn .dropdown{
+
+    
+    flex: 0 1 calc(10% - 1em);
+    padding: 10px;
+    
+  }
+
+  .s1_box{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .s1_flex{
+    display: flex;
+    flex-wrap: wrap;
+  
+} 
+
+
+ .s1_dropbtn{
+  width: 25%;
+  margin-left: 5%;
+ }   
+
+ .s1_search{
+  margin-left: 28%;
+  width: 50%;
+ }   
+
+ .s1_button{
+   width:15%;
+ }
+
+ 
+ .s3_head3{
+  font-size:2em;
+  margin-top:0%;
+  }
+
+  .s3_top-left{
+    font-size: 10px;
+    top: 2px;
+    
+
+  }
+.co_b{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  float: right;
+ 
+
+
+}
+
+.co_button3{
+  margin-left: 90%;
+  margin-top: 40%;
+  
+}
+  
+}
 .co_head{
 	line-height: 18px;;
 	color: #07176a;
@@ -216,14 +419,15 @@
 }
 
 .co_button1{
-	width: 140px;
+	width: 130px;
 	height: 50px;
 	background-color: #07176a;
 	border-radius: 25px;
-	margin-right: 10px;
+  margin-left: 13px;
+  margin-right: 5px;
 }
 .co_button2{
-	width: 140px;
+	width: 130px;
 	height: 50px;
 	background-color: #c52dac;
 	border-radius: 25px;
@@ -240,13 +444,11 @@
 	border-radius: 25px;
   text-align: center;
   margin-left: 2%;
-
-	
 }
-
 .co_b{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-end;
   margin-top: 16%;
   margin-right: 10%;
@@ -277,12 +479,15 @@
 }
 
 .s3_box{
-	background-image: url("../stuff/images/search/img8.jpg");
+  background-image: url("../stuff/images/search/img8.jpg");
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+
 	border-radius: 15px;
 	height: 500px;
 	position: relative;
 	text-align: left;
-
 	margin-right: 150px;
 }		
 
@@ -299,6 +504,7 @@
 	font-weight: bold;
 
 }
+
 .details-carousel-image-1{
     background-image: url("./../stuff/images/lounge.jpg");
     background-repeat: no-repeat;
@@ -461,7 +667,7 @@ flex-direction: row;
 	background-color:  #06176B;
 	color: white;
 	margin-bottom: 3%;
-	
+
 }
 .details-map-reserve-button{
 	font-family: 'Roboto', sans-serif;
@@ -626,7 +832,7 @@ flex-direction: row;
 .item-5 {
   grid-area: a5;
   background-image: url("../stuff/images/hyderabad.png");
-  
+
 }
 /* end of grid */
 .viewall {
@@ -989,3 +1195,4 @@ margin-left:-130px;
   }
 
 }
+
