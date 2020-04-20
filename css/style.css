@@ -45,7 +45,6 @@
 
 }
 
-
 /*search*/
 
 .s1_box{
@@ -67,6 +66,8 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+
 
 .s1_dropbtn{
 	font-family: 'Roboto', sans-serif;
@@ -91,12 +92,13 @@
   height: 40px;
   text-align: center;
 	border-color: rgb(131, 128, 128);
-
 	border-width: 1px;
 	border-radius: 10px;
 	background-color: white;
 	color: #fff;
-	padding: 5px;
+
+	
+
 }
 
 
@@ -118,13 +120,11 @@
 	font-weight: bold;
   }
  
-
-.dropdown{
-
   .s2_dropbtn .dropdown{
+
+  
   flex: 0 1 10%;
   padding: 10px;
-
   
 }
 
@@ -141,16 +141,11 @@
 }
     
 .s2_dropbtn{
-
-  display: flex; 
-  flex-direction: row;  
-  justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
  margin-left: 200px;
-  
 	
 }
-
 
   
 
@@ -249,22 +244,6 @@
       margin-left: 30%;
 
   
-
-
-.co_card{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin:50px 0px 0 150px ;
-  width: 75%;
-  
-}
-
-.co_card1{
-  margin-left:10px;
-  margin-right: 10px;
-  margin-bottom: 8px;
-  box-shadow: 1px 1px 10px 1px black;
-
     
   }
   
@@ -401,7 +380,6 @@
   float: right;
  
 
-
 }
 
 .co_button3{
@@ -444,10 +422,12 @@
 	border-radius: 25px;
   text-align: center;
   margin-left: 2%;
+
+	
 }
+
 .co_b{
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-top: 16%;
@@ -481,13 +461,14 @@
 .s3_box{
   background-image: url("../stuff/images/search/img8.jpg");
   background-position: center center;
-  background-repeat: no-repeat; 
-  background-size: cover;
-
+    background-repeat: no-repeat;
+    
+    background-size: cover;
 	border-radius: 15px;
 	height: 500px;
 	position: relative;
 	text-align: left;
+  
 	margin-right: 150px;
 }		
 
